@@ -1,0 +1,18 @@
+.btn-group .btn{
+  outline: none !important;
+  border: none !important;
+}
+.btn-group .fa-circle-user{
+  font-size: 30px !important;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 115% !important;
+  left: auto;
+  right: 0;
+  padding: 0 !important;
+  margin-top: var(--bs-dropdown-spacer);
+}
+.navbar-brand img{
+  width: 40px;
+  height: 40px;
+}
