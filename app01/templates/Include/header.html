@@ -27,6 +27,7 @@
                     {% if user.is_authenticated %}
                     <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                     <li><a class="dropdown-item" href="{% url 'signout' %}">Logout</a></li>
+                    <li><a class="dropdown-item" href="{% url 'change_password' %}">Change Password</a></li>
                     {% else %}
                     <li><a class="dropdown-item" href="{% url 'signin' %}">Login</a></li>
                     <li><a class="dropdown-item" href="{% url 'signup' %}">Register</a></li>

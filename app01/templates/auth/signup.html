@@ -13,11 +13,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-12">
-                <form action="" method="post">
+                <form action="" method="post" class="shadow p-3">
                     {% csrf_token %}
                     {{ form| crispy }}
 
-                    <input type="submit" value="Register">
+                    <input type="submit" class="btn btn-primary px-4" value="Register">
                 </form>
             </div>
         </div>
