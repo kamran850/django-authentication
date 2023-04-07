@@ -156,3 +156,23 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # ]
 
 
+
+# email configs
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.evazu.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'password-reset@evazu.com'
+EMAIL_HOST_PASSWORD = 'password-reset'
+DEFAULT_FROM_EMAIL = 'password-reset@evazu.com'
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'mail.evazu.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'password-reset@evazu.com'
+# EMAIL_HOST_PASSWORD = 'password-reset'
+# DEFAULT_FROM_EMAIL = 'password-reset@evazu.com'
+
+

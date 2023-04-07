@@ -14,7 +14,13 @@
                 <form action="" method="post" class="shadow p-3">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <input type="submit" class="btn btn-primary px-3" value="Login">
+                    <div class="reset-password">
+                        <h6><a href="{% url 'password_reset' %}">Forgot Password?</a></h6>
+                    </div>
+                    <div class="d-grid gap-2 my-3">
+                        <input type="submit" class="btn btn-primary px-3" value="Login">
+                      </div>
+
                 </form>
             </div>
         </div>

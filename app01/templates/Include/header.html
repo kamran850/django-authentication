@@ -20,8 +20,12 @@
                 </li>
             </ul>
             <div class="btn-group">
-                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" id="user-dropdown">
+                    {% if user.is_authenticated %}
                     <i class="fa-solid fa-circle-user"></i>
+                    {% else %}
+                    <i class="fa-solid fa-arrow-right-to-bracket fs-4" title="Signup"></i>
+                    {% endif %} 
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                     {% if user.is_authenticated %}
@@ -29,7 +33,7 @@
                     <li><a class="dropdown-item" href="{% url 'signout' %}">Logout</a></li>
                     <li><a class="dropdown-item" href="{% url 'change_password' %}">Change Password</a></li>
                     {% else %}
-                    <li><a class="dropdown-item" href="{% url 'signin' %}">Login</a></li>
+                    <!-- <li><a class="dropdown-item" href="{% url 'signin' %}">Login</a></li> -->
                     <li><a class="dropdown-item" href="{% url 'signup' %}">Register</a></li>
                     {% endif %}
                 </ul>

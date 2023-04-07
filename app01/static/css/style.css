@@ -1,3 +1,6 @@
+#user-dropdown:hover + .dropdown-menu {
+  display: block;
+}
 .btn-group .btn{
   outline: none !important;
   border: none !important;
@@ -15,4 +18,11 @@
 .navbar-brand img{
   width: 40px;
   height: 40px;
+}
+.invalid-feedback{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+p{
+  margin: 0 !important;
 }

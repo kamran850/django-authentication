@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}
+
+{% endblock %}
+
+
+
+{% block content %}
+<section id="acc_active_email_send" class="mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <p>Hey {{ user }} check you inbox, we have already send an email. Please confirm your email address to
+                    complete the registration. Go to your email <a href="mailto:{{ email }}" target="_blank" rel="noopener noreferrer">Click Here</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
